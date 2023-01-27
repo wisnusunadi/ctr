@@ -34,8 +34,18 @@ $routes->get('/register', 'LoginApp::register');
 $routes->post('/register', 'LoginApp::store_register');
 $routes->post('/login', 'LoginApp::store_login');
 $routes->get('/logout', 'LoginApp::logout');
-$routes->get('/admin', 'Dashboard::admin_dash', ['filter' => 'auth']);
+
+//Murid
 $routes->get('/murid', 'Dashboard::murid_dash', ['filter' => 'auth']);
+
+// Admin
+$routes->get('/admin', 'Dashboard::admin_dash', ['filter' => 'auth']);
+$routes->get('/guru', 'Dashboard::guru_view', ['filter' => 'auth']);
+$routes->get('/guru/create', 'Dashboard::guru_create', ['filter' => 'auth']);
+$routes->get('/mapel', 'Dashboard::mapel_view', ['filter' => 'auth']);
+$routes->get('/murids', 'Dashboard::murid_view', ['filter' => 'auth']);
+$routes->get('/rekap_nilai', 'Dashboard::rekap_nilai', ['filter' => 'auth']);
+
 
 /*
  * --------------------------------------------------------------------

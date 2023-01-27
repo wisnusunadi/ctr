@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="<?= base_url('theme/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?= base_url('theme/plugins/daterangepicker/daterangepicker.css') ?>">
+    <!-- Datatables -->
+    <link rel="stylesheet" href="<?= base_url('theme/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') ?>">
     <!-- summernote -->
-    <link rel="stylesheet" href="<?= base_url('theme/plugins/summernote/summernote-bs4.min.css') ?>">
+    <link rel=" stylesheet" href="<?= base_url('theme/plugins/summernote/summernote-bs4.min.css') ?>">
 </head>

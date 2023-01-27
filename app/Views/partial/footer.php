@@ -24,6 +24,10 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('theme/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url('theme/plugins/datatables/jquery.dataTables.min.js') ?>"></script>
+<script src="<?= base_url('theme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
+<script src="<?= base_url('theme/plugins/datatables-responsive/js/dataTables.responsive.min.js') ?>"></script>
+<script src="<?= base_url('theme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
 <!-- ChartJS -->
 <script src="<?= base_url('theme/plugins/chart.js/Chart.min.js') ?>"></script>
 <!-- Sparkline -->
@@ -44,10 +48,18 @@
 <script src="<?= base_url('theme/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') ?>"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('theme/dist/js/adminlte.js') ?>"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?= base_url('theme/dist/js/demo.js') ?>"></script>
+
+
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('theme/dist/js/pages/dashboard.js') ?>"></script>
+
+<script>
+    $(function() {
+        $('#example2').DataTable({
+
+        });
+    });
+</script>
 </body>
 
 </html>

@@ -18,9 +18,17 @@
           <!-- Sidebar Menu -->
           <nav class="mt-2">
               <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                  <li class="nav-item">
+                      <a href="/<?php echo $session->get('role') ?>" class="nav-link">
+                          <i class="nav-icon fas fa-th"></i>
+                          <p>
+                              Dashboard
+                          </p>
+                      </a>
+                  </li>
                   <li class="nav-header">Master Data</li>
                   <li class="nav-item">
-                      <a href="pages/widgets.html" class="nav-link">
+                      <a href="/mapel" class="nav-link">
                           <i class="nav-icon fas fa-th"></i>
                           <p>
                               Mata Pelajaran
@@ -28,7 +36,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="pages/widgets.html" class="nav-link">
+                      <a href="/guru" class="nav-link ">
                           <i class="nav-icon fas fa-th"></i>
                           <p>
                               Guru
@@ -36,7 +44,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="pages/widgets.html" class="nav-link">
+                      <a href="/murids" class="nav-link">
                           <i class="nav-icon fas fa-th"></i>
                           <p>
                               Murid
@@ -45,16 +53,18 @@
                   </li>
                   <li class="nav-header">Rekap Data</li>
                   <li class="nav-item">
-                      <a href="pages/widgets.html" class="nav-link">
+                      <a href="/rekap_nilai" class="nav-link">
                           <i class="nav-icon fas fa-th"></i>
                           <p>
                               Rekap Nilai
                           </p>
                       </a>
                   </li>
+                  <!-- Murid -->
               </ul>
           </nav>
           <!-- /.sidebar-menu -->
       </div>
+
       <!-- /.sidebar -->
   </aside>
