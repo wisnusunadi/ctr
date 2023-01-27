@@ -29,7 +29,13 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Dashboard::index');
+$routes->get('/', 'LoginApp::login');
+$routes->get('/register', 'LoginApp::register');
+$routes->post('/register', 'LoginApp::store_register');
+$routes->post('/login', 'LoginApp::store_login');
+$routes->get('/logout', 'LoginApp::logout');
+$routes->get('/admin', 'Dashboard::admin_dash', ['filter' => 'auth']);
+$routes->get('/murid', 'Dashboard::murid_dash', ['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

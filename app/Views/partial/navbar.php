@@ -1,3 +1,5 @@
+<?php $session = session() ?>
+
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Navbar -->
@@ -12,16 +14,16 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">Alexander Price
+                    <a class="nav-link" data-toggle="dropdown" href="#"><?php echo $session->get('nama')  ?>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> Ubah Profile
+                            Ubah Profile
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> Keluar
+                        <a href="/logout" class="dropdown-item">
+                            Keluar
                         </a>
                     </div>
                 </li>
