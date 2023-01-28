@@ -77,6 +77,10 @@
                                             <td><?= $k['nama']; ?></td>
                                             <td>Kelas <?= $k['kelas']; ?></td>
                                             <td>
+                                                <a type="button" class="btn btn-warning" href="/mapel/nilai/<?= $k['id']; ?>">
+                                                    <i class="fas fa-eye"></i>&nbsp;Nilai
+                                                </a>
+                                                &nbsp;
                                                 <a type="button" class="btn btn-info" href="/mapel/edit/<?= $k['id']; ?>">
                                                     <i class="fas fa-pencil-alt"></i>&nbsp;Edit
                                                 </a>

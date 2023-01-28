@@ -10,6 +10,11 @@ class MuridModel extends Model
     protected $table            = 'murid';
     protected $primaryKey       = 'id';
     protected $protectFields    = true;
-    protected $allowedFields    = ['no_induk', 'nama', 'tgl_lahir', 'jenis'];
+    protected $allowedFields    = ['no_induk', 'nama', 'tgl_lahir', 'jenis', 'kelas'];
     protected $useTimestamps = false;
+
+    public function search($keyword)
+    {
+        return $this->table('murid')->like('nama', $keyword);
+    }
 }

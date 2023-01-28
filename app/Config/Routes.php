@@ -43,6 +43,7 @@ $routes->get('/admin', 'Dashboard::admin_dash', ['filter' => 'auth']);
 $routes->get('/rekap_nilai', 'Dashboard::rekap_nilai', ['filter' => 'auth']);
 
 //MataPelajaran
+$routes->get('/mapel/nilai/(:num)', 'Dashboard::mapel_nilai/$1', ['filter' => 'auth']);
 $routes->get('/mapel', 'Dashboard::mapel_view', ['filter' => 'auth']);
 $routes->get('/mapel/edit/(:num)', 'Dashboard::mapel_edit/$1', ['filter' => 'auth']);
 $routes->post('/mapel/update/(:num)', 'Dashboard::mapel_update/$1', ['filter' => 'auth']);
@@ -60,7 +61,12 @@ $routes->get('/guru/create', 'Dashboard::guru_create', ['filter' => 'auth']);
 
 
 //Murid
+$routes->post('/murids', 'Dashboard::murid_store', ['filter' => 'auth']);
 $routes->get('/murids', 'Dashboard::murid_view', ['filter' => 'auth']);
+$routes->get('/murids/create', 'Dashboard::murid_create', ['filter' => 'auth']);
+$routes->get('/murids/edit/(:num)', 'Dashboard::murid_edit/$1', ['filter' => 'auth']);
+$routes->post('/murids/update/(:num)', 'Dashboard::murid_update/$1', ['filter' => 'auth']);
+$routes->delete('/murids/delete/(:num)', 'Dashboard::murid_delete/$1', ['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

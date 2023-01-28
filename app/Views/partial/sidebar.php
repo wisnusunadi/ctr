@@ -56,7 +56,7 @@
                       <a href="/rekap_nilai" class="nav-link">
                           <i class="nav-icon fas fa-th"></i>
                           <p>
-                              Rekap Nilai
+                              Laporan
                           </p>
                       </a>
                   </li>

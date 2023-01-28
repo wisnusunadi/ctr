@@ -204,6 +204,81 @@ class Dashboard extends BaseController
         ];
         return view('admin/murid/index', $data);
     }
+
+    public function murid_create()
+    {
+        return view('admin/murid/create');
+    }
+    public function murid_store()
+    {
+        $validate = $this->validate([
+            'no_induk' => 'is_unique[murid.no_induk]|required',
+            'tgl_lahir' => 'required',
+            'nama' => 'required',
+            'jenis' => 'required',
+            'kelas' => 'required',
+
+        ]);
+        if (!$validate) {
+            session()->setFlashdata('gagal', 'Cek Form Kembali');
+            return redirect()->to('/murids/create');
+        }
+        $this->muridModel->insert([
+            "no_induk" => $this->request->getPost('no_induk'),
+            "nama" => $this->request->getPost('nama'),
+            "tgl_lahir" => $this->request->getPost('tgl_lahir'),
+            "jenis" =>  $this->request->getPost('jenis'),
+            "kelas" =>  $this->request->getPost('kelas')
+        ]);
+        session()->setFlashdata('sukses', 'Berhasil Ditambahkam');
+        return redirect()->to('/murids/create');
+    }
+    public function murid_edit($id)
+    {
+        $data = [
+            'murid' => $this->muridModel->find($id),
+        ];
+        return view('admin/murid/edit', $data);
+    }
+    public function murid_update($id)
+    {
+        $data = $this->muridModel->find($id);
+        $validate = $this->validate([
+            'no_induk' => $data['no_induk'] ==  $this->request->getPost('no_induk') ? 'required' : 'is_unique[murid.no_induk]|required',
+            'tgl_lahir' => 'required',
+            'nama' => 'required',
+            'jenis' => 'required',
+            'kelas' => 'required',
+
+        ]);
+        if (!$validate) {
+            session()->setFlashdata('gagal', 'Cek Form Kembali');
+            return redirect()->to('/murids/edit/' . $id);
+        }
+        $this->muridModel->save([
+            "id" => $id,
+            "no_induk" => $this->request->getPost('no_induk'),
+            "nama" => $this->request->getPost('nama'),
+            "tgl_lahir" => $this->request->getPost('tgl_lahir'),
+            "jenis" =>  $this->request->getPost('jenis'),
+            "kelas" =>  $this->request->getPost('kelas')
+        ]);
+        session()->setFlashdata('sukses', 'Berhasil Diubah');
+        return redirect()->to('/murids/edit/' . $id);
+    }
+    public function murid_delete($id)
+    {
+        $this->muridModel->delete($id);
+        session()->setFlashdata('delete', 'Berhasil Di hapus');
+        return redirect()->to('/murids');
+    }
+    public function mapel_nilai($id)
+    {
+        $data = [
+            'detail' => $this->mapelModel->joinsGuru($id)
+        ];
+        return view('admin/mapel/nilai', $data);
+    }
     public function rekap_nilai()
     {
 

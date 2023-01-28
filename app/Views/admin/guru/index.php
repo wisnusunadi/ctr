@@ -91,8 +91,6 @@
                                                         <i class="fas fa-trash"></i>&nbsp;Hapus
                                                     </button>
                                                 </form>
-
-
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
