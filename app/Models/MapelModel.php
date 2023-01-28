@@ -12,4 +12,9 @@ class MapelModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['kode', 'nama', 'kelas'];
     protected $useTimestamps = false;
+
+    public function search($keyword)
+    {
+        return $this->table('mata_pelajaran')->like('nama', $keyword);
+    }
 }

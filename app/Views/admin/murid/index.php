@@ -44,17 +44,21 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td> 4</td>
-                                        <td> 4</td>
-                                        <td> 4</td>
+                                    <?php $i = 1 + (5 * ($currPage - 1)); ?>
+                                    <?php foreach ($murid as $k) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $k['no_induk']; ?></td>
+                                            <td><?= $k['nama']; ?></td>
+                                            <td><?= $k['tgl_lahir']; ?></td>
+                                            <td><?= $k['jenis'] == 'l' ? 'Laki laki' : 'Perempuan' ?></td>
+                                            <td>
+                                                s
 
-                                    </tr>
+
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>

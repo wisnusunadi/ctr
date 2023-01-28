@@ -23,36 +23,83 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                     <div class="card">
+                        <?php
+                        $session = session();
+                        if ($session->getFlashdata('delete')) { ?>
+                            <div class="alert alert-success alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h5><i class="icon fas fa-check"></i> Berhasil</h5>
+                                <?php echo $session->getflashdata('delete'); ?>
+                            </div>
+                        <?php } ?>
                         <div class="card-header">
-                            <a type="button" class="btn btn-info" href="/guru/create">
-                                <i class="fas fa-plus"></i>&nbsp;Tambah
-                            </a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a type="button" class="btn btn-info" href="/guru/create">
+                                        <i class="fas fa-plus"></i>&nbsp;Tambah
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <form action="" method="get">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Ketik di sini" aria-describedby="button-addon2" name="keyword">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Cari</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
+                            <table id="example2x" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th width="1%">No</th>
                                         <th>ID Guru</th>
                                         <th>Nama</th>
+                                        <th>Tgl Lahir</th>
+                                        <th>Jenis Kelamin</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td> 4</td>
+                                    <?php $i = 1 + (5 * ($currPage - 1)); ?>
+                                    <?php foreach ($guru as $k) : ?>
+                                        <tr>
+                                            <td><?= $i++; ?></td>
+                                            <td><?= $k['no_induk']; ?></td>
+                                            <td><?= $k['nama']; ?></td>
+                                            <td><?= $k['tgl_lahir']; ?></td>
+                                            <td><?= $k['jenis'] == 'l' ? 'Laki laki' : 'Perempuan' ?></td>
+                                            <td>
 
-                                    </tr>
+                                                <a type="button" class="btn btn-info" href="/guru/edit/<?= $k['id']; ?>">
+                                                    <i class="fas fa-pencil-alt"></i>&nbsp;Edit
+                                                </a>
+                                                &nbsp;
+                                                <form action="/guru/delete/<?= $k['id']; ?>" class="d-inline" method="post">
+                                                    <?= csrf_field() ?>
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin di hapus ?')">
+                                                        <i class="fas fa-trash"></i>&nbsp;Hapus
+                                                    </button>
+                                                </form>
+
+
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
+                            </br>
+                            <?= $pager->links('guru', 'custom_pagination'); ?>
                         </div>
                         <!-- /.card-body -->
                     </div>

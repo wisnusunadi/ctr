@@ -52,6 +52,7 @@
 
 
                         <form class="form-horizontal" action="/guru" method="POST">
+                            <?= csrf_field() ?>
                             <div class="card-body">
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nomor Induk</label>
