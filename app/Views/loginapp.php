@@ -14,8 +14,6 @@
         <p style="color:red">Username atau Password Salah</p>
     <?php } ?>
 
-
-
     <div class="login-box">
         <div class="login-logo">
             <b>Sistem Informasi</b>

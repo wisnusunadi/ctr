@@ -42,16 +42,21 @@ class Validation extends BaseConfig
     // Rules
     // --------------------------------------------------------------------
     public $register = [
+        'nama' => 'is_unique[user.murid_id]|required',
         'username' => 'alpha_numeric|is_unique[user.username]|required',
         'password' => 'min_length[8]|alpha_numeric_punct',
         'confirm' => 'matches[password]'
     ];
 
     public $register_errors = [
+        'nama' => [
+            'is_unique' => 'Siswa sudah terdaftar',
+            'required' => 'Nama harus di isi'
+        ],
         'username' => [
             'alpha_numeric' => 'Username hanya boleh mengandung huruf dan angka',
             'is_unique' => 'Username sudah dipakai',
-            'required' => 'Username sudah dipakai'
+            'required' => 'Username harus di isi'
         ],
         'password' => [
             'min_length' => 'Password harus terdiri dari 8 kata',

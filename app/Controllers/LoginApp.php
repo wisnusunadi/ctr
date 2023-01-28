@@ -3,28 +3,33 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\GuruModel;
+use App\Models\MuridModel;
 use App\Models\UserModel;
+use Config\Services;
 
 class LoginApp extends BaseController
 {
     public function __construct()
     {
         $this->userModel = new UserModel();
-        $this->validation = \Config\Services::validation();
-        $this->session = \Config\Services::session();
+        $this->muridModel = new MuridModel();
+        $this->guruModel = new GuruModel();
+        $this->validation = Services::validation();
+        $this->session = Services::session();
     }
 
     public function login()
     {
         $header = 'SI | Login';
-        echo view('partial/header', ['header' => $header]);
+        echo  view('partial/header', ['header' => $header]);
 
-        echo view('/loginapp');
+        echo  view('/loginapp');
     }
     public function register()
     {
-        $header = 'SI | Register';
-        echo view('partial/header', ['header' => $header]);
+        $murid =   $this->muridModel->findAll();
+        echo view('partial/header', ['murid' => $murid]);
 
         echo view('/registerapp');
     }
@@ -44,7 +49,7 @@ class LoginApp extends BaseController
         $password = md5($data['password']);
 
         $this->userModel->save([
-            'nama' => $data['nama'],
+            'murid_id' => $data['nama'],
             'username' => $data['username'],
             'password' => $password,
         ]);
@@ -57,14 +62,24 @@ class LoginApp extends BaseController
         $data = $this->request->getPost();
         $user = $this->userModel->where('username', $data['username'])->first();
 
+
+
+
+
         if ($user) {
             if ($user['password'] != md5($data['password'])) {
                 session()->setFlashdata('password', 'Password salah');
                 return redirect()->to('/');
             } else {
+                if ($user['role'] == 'admin') {
+                    $nama_user =  $this->guruModel->where('id', $user['guru_id'])->first();
+                } else {
+                    $nama_user =  $this->muridModel->where('id', $user['murid_id'])->first();
+                }
+
                 $sessLogin = [
+                    'nama' =>  $nama_user['nama'],
                     'isLogin' => true,
-                    'nama' => $user['nama'],
                     'username' => $user['username'],
                     'role' => $user['role']
                 ];

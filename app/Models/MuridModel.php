@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class MuridModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'user';
+    protected $table            = 'murid';
     protected $primaryKey       = 'id';
     protected $protectFields    = true;
-    protected $allowedFields    = ['guru_id', 'murid_id', 'username', 'password', 'role'];
+    protected $allowedFields    = ['no_induk', 'nama', 'tgl_lahir', 'jenis'];
     protected $useTimestamps = false;
 }

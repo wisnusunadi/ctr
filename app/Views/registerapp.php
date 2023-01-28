@@ -24,7 +24,12 @@
 
                 <form action="/register" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nama" name="nama">
+                        <select type="text" class="form-control" placeholder="Nama" name="nama">
+                            <option value="">Pilih Nama Siswa</option>
+                            <?php foreach ($murid as $m) : ?>
+                                <option value="<?= $m['id'] ?>"><?= $m['nama'] ?></option>
+                            <?php endforeach ?>
+                        </select>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>

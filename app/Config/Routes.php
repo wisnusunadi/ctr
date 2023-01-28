@@ -41,6 +41,7 @@ $routes->get('/murid', 'Dashboard::murid_dash', ['filter' => 'auth']);
 // Admin
 $routes->get('/admin', 'Dashboard::admin_dash', ['filter' => 'auth']);
 $routes->get('/guru', 'Dashboard::guru_view', ['filter' => 'auth']);
+$routes->post('/guru', 'Dashboard::guru_store', ['filter' => 'auth']);
 $routes->get('/guru/create', 'Dashboard::guru_create', ['filter' => 'auth']);
 $routes->get('/mapel', 'Dashboard::mapel_view', ['filter' => 'auth']);
 $routes->get('/murids', 'Dashboard::murid_view', ['filter' => 'auth']);

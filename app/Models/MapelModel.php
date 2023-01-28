@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class MapelModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'user';
+    protected $table            = 'mata_pelajaran';
     protected $primaryKey       = 'id';
     protected $protectFields    = true;
-    protected $allowedFields    = ['guru_id', 'murid_id', 'username', 'password', 'role'];
+    protected $allowedFields    = ['kode', 'nama', 'kelas'];
     protected $useTimestamps = false;
 }
