@@ -6,7 +6,9 @@ use App\Controllers\BaseController;
 use App\Models\GuruModel;
 use App\Models\MapelModel;
 use App\Models\MuridModel;
+use Config\Database;
 use Config\Services;
+use PhpParser\Node\Stmt\TryCatch;
 
 class Dashboard extends BaseController
 {
@@ -18,6 +20,7 @@ class Dashboard extends BaseController
         $this->guruModel = new GuruModel();
         $this->validation = Services::validation();
         $this->session = Services::session();
+        $this->db = Database::connect();
     }
 
 
@@ -274,14 +277,48 @@ class Dashboard extends BaseController
     }
     public function mapel_nilai($id)
     {
+        $kelas =  $this->mapelModel->joinsGuru($id)->kelas;
         $data = [
-            'detail' => $this->mapelModel->joinsGuru($id)
+            'detail' => $this->mapelModel->joinsGuru($id),
+            'murid' => $this->muridModel->getbyKelas($kelas)
         ];
         return view('admin/mapel/nilai', $data);
     }
+    public function mapel_nilai_store()
+    {
+        // dd($this->request->getPost());
+        // $data = [
+        //     [
+        //         'murid_id' => 1,
+        //         'mapel_id'  => 4,
+        //         'kelas'  => 1,
+        //         'nilai'  => 80
+        //     ],
+        // ];
+        // dd($data);
+        try {
+            $builder = $this->db->table('detail_murid');
+
+            for ($i = 0; $i < count($this->request->getPost('murid_id')); $i++) {
+                if ($this->request->getPost('nilai')[$i] != '') {
+                    $data[] = array(
+                        'murid_id' => $this->request->getPost('murid_id')[$i],
+                        'mapel_id'  => $this->request->getPost('mapel_id'),
+                        'kelas'  => $this->request->getPost('kelas'),
+                        'nilai'  => $this->request->getPost('nilai')[$i]
+                    );
+                }
+            }
+
+            dd($data);
+            $builder->insertBatch($data);
+        } catch (\Throwable $th) {
+            session()->setFlashdata('gagal', 'Cek Form Kembali');
+            return redirect()->to('/mapel/nilai/' . $this->request->getPost('mapel_id'));
+        }
+    }
     public function rekap_nilai()
     {
-
         return view('admin/rekap/nilai');
     }
 }

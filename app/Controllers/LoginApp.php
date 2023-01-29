@@ -62,10 +62,6 @@ class LoginApp extends BaseController
         $data = $this->request->getPost();
         $user = $this->userModel->where('username', $data['username'])->first();
 
-
-
-
-
         if ($user) {
             if ($user['password'] != md5($data['password'])) {
                 session()->setFlashdata('password', 'Password salah');
