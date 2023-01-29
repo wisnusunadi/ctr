@@ -18,7 +18,7 @@ class MuridModel extends Model
         return $this->table('murid')->like('nama', $keyword);
     }
 
-    public function getbyKelas($id)
+    public function getBelumNilai($id)
     {
         $query = $this->db->table('murid');
         $query->select('nama,id');

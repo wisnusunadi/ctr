@@ -12,4 +12,13 @@ class DetailMuridModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['murid_id', 'mapel_id', 'kelas', 'nilai'];
     protected $useTimestamps = false;
+
+    public function getSudahNilai($id)
+    {
+        $query = $this->db->table('detail_murid');
+        $query->select('nilai,murid.nama as nama_murid');
+        $query->join('murid', 'murid.id = detail_murid.murid_id');
+        $query->where('detail_murid.mapel_id', $id);
+        return $query->get()->getResult();
+    }
 }

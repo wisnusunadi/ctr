@@ -49,63 +49,118 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12">
-                    <?php
-                    $session = session();
-                    ?>
-                    <?php if ($session->getFlashdata('gagal')) { ?>
-                        <div class="alert alert-danger alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <h5><i class="icon fas fa-ban"></i> Gagal</h5>
-                            <?php echo $session->getflashdata('gagal'); ?>
-                        </div>
-                    <?php } ?>
-                    <?php if ($session->getFlashdata('sukses')) { ?>
-                        <div class="alert alert-success alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <h5><i class="icon fas fa-check"></i> Berhasil</h5>
-                            <?php echo $session->getflashdata('sukses'); ?>
-                        </div>
-                    <?php } ?>
-                    <h5>Murid </h5>
-                    <form action="/mapel/nilai/" method="post">
-                        <?= csrf_field() ?>
-                        <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="mapel_id" style="width: 50%;" value="<?= $detail->id_mapel  ?>">
-                        <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="kelas" style="width: 50%;" value="<?= $detail->kelas  ?>">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table align-center" id="showtable" style="width: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th>No</th>
-                                                <th width="50%">Nama</th>
-                                                <th>Nilai</th>
+                    <div class="card">
+                        <div class="card-header p-2">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" href="#belum" data-toggle="tab">Belum Dinilai</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sudah" data-toggle="tab">Sudah Dinilai</a></li>
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $i = 1;
-                                            ?>
-                                            <?php foreach ($murid as $m) : ?>
-                                                <tr>
-                                                    <td class="d-none"> <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="murid_id[]" style="width: 50%;" value="<?= $m->id ?>"></td>
-                                                    <td><?= $i++ ?></td>
-                                                    <td><?= $m->nama ?></td>
-                                                    <td> <input type="text" class="form-control" id="inputEmail3" placeholder="Nilai" name="nilai[]" style="width: 50%;" min="0" max="100">
-                                                    </td>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        </tbody>
-                                    </table>
+                            </ul>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="active tab-pane" id="belum">
+                                    <?php
+                                    $session = session();
+                                    ?>
+                                    <?php if ($session->getFlashdata('gagal')) { ?>
+                                        <div class="alert alert-danger alert-dismissible">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <h5><i class="icon fas fa-ban"></i> Gagal</h5>
+                                            <?php echo $session->getflashdata('gagal'); ?>
+                                        </div>
+                                    <?php } ?>
+                                    <?php if ($session->getFlashdata('sukses')) { ?>
+                                        <div class="alert alert-success alert-dismissible">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <h5><i class="icon fas fa-check"></i> Berhasil</h5>
+                                            <?php echo $session->getflashdata('sukses'); ?>
+                                        </div>
+                                    <?php } ?>
+                                    <form action="/mapel/nilai/" method="post">
+                                        <?= csrf_field() ?>
+                                        <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="mapel_id" style="width: 50%;" value="<?= $detail->id_mapel  ?>">
+                                        <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="kelas" style="width: 50%;" value="<?= $detail->kelas  ?>">
+                                        <div class="card">
+                                            <div class="card-body" style="overflow-y:scroll; height:400px;">
+                                                <div class="table-responsive">
+                                                    <table class="table align-center" id="showtable" style="width: 100%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No</th>
+                                                                <th width="50%">Nama</th>
+                                                                <th>Nilai</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <?php
+                                                            $i = 1;
+                                                            ?>
+                                                            <?php foreach ($murid as $m) : ?>
+                                                                <tr>
+                                                                    <td class="d-none"> <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="murid_id[]" style="width: 50%;" value="<?= $m->id ?>"></td>
+                                                                    <td><?= $i++ ?></td>
+                                                                    <td><?= $m->nama ?></td>
+                                                                    <td> <input type="text" class="form-control" id="inputEmail3" placeholder="Nilai" name="nilai[]" style="width: 50%;" min="0" max="100">
+                                                                    </td>
+                                                                </tr>
+                                                            <?php endforeach; ?>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="submit" class="btn btn-info">Masukkan Nilai</button>
+                                                <a type="submit" class="btn btn-default float-right" href="/mapel">Batal</a>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
+                                <!-- /.tab-pane -->
+                                <div class="tab-pane" id="sudah">
+                                    <div class="card">
+                                        <div class="card-body" style="overflow-y:scroll; height:400px;">
+                                            <div class="table-responsive">
+                                                <table class="table align-center" id="showtable" style="width: 100%;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th width="50%">Nama</th>
+                                                            <th>Nilai</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php
+                                                        $i = 1;
+                                                        ?>
+                                                        <?php foreach ($murid_done as $q) : ?>
+                                                            <tr>
+                                                                <td><?= $i++ ?></td>
+                                                                <td><?= $q->nama_murid ?></td>
+                                                                <td><?= $q->nilai ?></td>
+                                                            </tr>
+                                                        <?php endforeach; ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-info">Masukkan Nilai</button>
+                                            <a type="submit" class="btn btn-default float-right" href="/mapel">Batal</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.tab-pane -->
+
+
+                                <!-- /.tab-pane -->
                             </div>
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-info">Masukkan Nilai</button>
-                                <a type="submit" class="btn btn-default float-right" href="/mapel">Batal</a>
-                            </div>
-                        </div>
-                    </form>
+                            <!-- /.tab-content -->
+                        </div><!-- /.card-body -->
+                    </div>
+
                 </div>
             </div>
             <!-- /.row -->

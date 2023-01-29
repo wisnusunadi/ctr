@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\DetailMuridModel;
 use App\Models\GuruModel;
 use App\Models\MapelModel;
 use App\Models\MuridModel;
@@ -17,6 +18,7 @@ class Dashboard extends BaseController
     {
         $this->mapelModel = new MapelModel();
         $this->muridModel = new MuridModel();
+        $this->detailmuridModel = new DetailMuridModel();
         $this->guruModel = new GuruModel();
         $this->validation = Services::validation();
         $this->session = Services::session();
@@ -280,7 +282,8 @@ class Dashboard extends BaseController
         $kelas =  $this->mapelModel->joinsGuru($id)->kelas;
         $data = [
             'detail' => $this->mapelModel->joinsGuru($id),
-            'murid' => $this->muridModel->getbyKelas($kelas)
+            'murid' => $this->muridModel->getBelumNilai($kelas),
+            'murid_done' => $this->detailmuridModel->getSudahNilai($id)
         ];
         return view('admin/mapel/nilai', $data);
     }
@@ -310,8 +313,10 @@ class Dashboard extends BaseController
                 }
             }
 
-            dd($data);
+            // dd($data);
             $builder->insertBatch($data);
+            session()->setFlashdata('sukses', 'Berhasil Ditambahkam');
+            return redirect()->to('/mapel/nilai/' . $this->request->getPost('mapel_id'));
         } catch (\Throwable $th) {
             session()->setFlashdata('gagal', 'Cek Form Kembali');
             return redirect()->to('/mapel/nilai/' . $this->request->getPost('mapel_id'));
