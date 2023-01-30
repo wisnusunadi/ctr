@@ -1,0 +1,498 @@
+INFO - 2023-01-30 12:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 12:48:35 --> Trying to get property 'kelas' of non-object
+in APPPATH\Controllers\Dashboard.php on line 284.
+ 1 APPPATH\Controllers\Dashboard.php(284): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas\' of non-object', 'APPPATH\\Controllers\\Dashboard.php', 284, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->mapel_nilai('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 12:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 12:48:54 --> Trying to get property 'kelas' of non-object
+in APPPATH\Controllers\Dashboard.php on line 284.
+ 1 APPPATH\Controllers\Dashboard.php(284): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas\' of non-object', 'APPPATH\\Controllers\\Dashboard.php', 284, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->mapel_nilai('14')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 12:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 12:48:58 --> Trying to get property 'kelas' of non-object
+in APPPATH\Controllers\Dashboard.php on line 284.
+ 1 APPPATH\Controllers\Dashboard.php(284): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas\' of non-object', 'APPPATH\\Controllers\\Dashboard.php', 284, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->mapel_nilai('7')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 12:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 12:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 13:06:49 --> Trying to get property 'nama' of non-object
+in APPPATH\Views\murid\dashboard.php on line 31.
+ 1 APPPATH\Views\murid\dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nama\' of non-object', 'APPPATH\\Views\\murid\\dashboard.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\murid\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(39): view('murid/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 13:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 13:17:16 --> Trying to get property 'kelas' of non-object
+in APPPATH\Controllers\Dashboard.php on line 38.
+ 1 APPPATH\Controllers\Dashboard.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas\' of non-object', 'APPPATH\\Controllers\\Dashboard.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 13:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 13:52:04 --> mysqli_sql_exception: Unknown column 'murid_id.kelas' in 'where clause' in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mata_pe...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mata_pe...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mata_pe...')
+#3 G:\Diverso\ctr\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pe...', Array, false)
+#4 G:\Diverso\ctr\app\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Diverso\ctr\app\Controllers\Dashboard.php(38): App\Models\MapelModel->getNilai('1')
+#6 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#7 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#11 {main}
+CRITICAL - 2023-01-30 13:52:04 --> Unknown column 'murid_id.kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pelajaran`.`nama` as `nama_mapel`
+FROM `mata_pelajaran`
+LEFT JOIN `detail_murid` ON `mata_pelajaran`.`id` = `detail_murid`.`mapel_id`
+WHERE `mata_pelajaran`.`kelas` = :mata_pelajaran.kelas:
+AND `murid_id`.`kelas` = :murid_id.kelas:', [...], false)
+ 2 APPPATH\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(38): App\Models\MapelModel->getNilai('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 13:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 13:52:21 --> mysqli_sql_exception: Unknown column 'murid_id.id' in 'where clause' in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mata_pe...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mata_pe...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mata_pe...')
+#3 G:\Diverso\ctr\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pe...', Array, false)
+#4 G:\Diverso\ctr\app\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Diverso\ctr\app\Controllers\Dashboard.php(38): App\Models\MapelModel->getNilai('1')
+#6 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#7 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#11 {main}
+CRITICAL - 2023-01-30 13:52:21 --> Unknown column 'murid_id.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pelajaran`.`nama` as `nama_mapel`
+FROM `mata_pelajaran`
+LEFT JOIN `detail_murid` ON `mata_pelajaran`.`id` = `detail_murid`.`mapel_id`
+WHERE `mata_pelajaran`.`kelas` = :mata_pelajaran.kelas:
+AND `murid_id`.`id` = :murid_id.id:', [...], false)
+ 2 APPPATH\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(38): App\Models\MapelModel->getNilai('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 13:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 13:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:19:47 --> mysqli_sql_exception: Unknown column 'detail_murid.mapel.id' in 'where clause' in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 G:\Diverso\ctr\app\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#5 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#9 {main}
+CRITICAL - 2023-01-30 14:19:47 --> Unknown column 'detail_murid.mapel.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mata_pelajaran WHERE NOT EXISTS (SELECT * FROM detail_murid where mata_pelajaran.id = detail_murid.mapel.id)')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:20:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE mata_pelajaran.kelas = 1' at line 1 in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 G:\Diverso\ctr\app\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#5 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#9 {main}
+CRITICAL - 2023-01-30 14:20:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE mata_pelajaran.kelas = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mata_pelajaran WHERE NOT EXISTS (SELECT * FROM detail_murid where mata_pelajaran.id = detail_murid.mapel_id) WHERE mata_pelajaran.kelas = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:21:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE mata_pelajaran.kelas = 1' at line 1 in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 G:\Diverso\ctr\app\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#5 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#9 {main}
+CRITICAL - 2023-01-30 14:21:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE mata_pelajaran.kelas = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Dashboard.php(38): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mata_pelajaran WHERE NOT EXISTS (SELECT * FROM detail_murid where mata_pelajaran.id = detail_murid.mapel_id) AND WHERE mata_pelajaran.kelas = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:27:39 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Models\MapelModel.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MapelModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MapelModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MapelModel')
+ 4 APPPATH\Controllers\Dashboard.php(19): spl_autoload_call('App\\Models\\MapelModel')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Dashboard->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:30:56 --> Too few arguments to function App\Models\MapelModel::getBelumNilai(), 1 passed in G:\Diverso\ctr\app\Controllers\Dashboard.php on line 37 and exactly 2 expected
+in APPPATH\Models\MapelModel.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(37): App\Models\MapelModel->getBelumNilai('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:31:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM m...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 G:\Diverso\ctr\app\Models\MapelModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 G:\Diverso\ctr\app\Controllers\Dashboard.php(35): App\Models\MapelModel->getBelumNilai('1', NULL)
+#5 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#6 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#10 {main}
+CRITICAL - 2023-01-30 14:31:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\MapelModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT * FROM mata_pelajaran WHERE NOT EXISTS (SELECT * FROM detail_murid where mata_pelajaran.id = detail_murid.mapel_id AND detail_murid.murid_id = 1) AND  mata_pelajaran.kelas = ')
+ 2 APPPATH\Controllers\Dashboard.php(35): App\Models\MapelModel->getBelumNilai('1', null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:36:15 --> mysqli_sql_exception: Unknown column 'mata_pelajaran' in 'field list' in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT mata_pel...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT mata_pel...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT mata_pel...')
+#3 G:\Diverso\ctr\app\Models\MapelModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT mata_pel...')
+#4 G:\Diverso\ctr\app\Controllers\Dashboard.php(36): App\Models\MapelModel->getBelumNilai('1', '1')
+#5 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#6 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#10 {main}
+CRITICAL - 2023-01-30 14:36:15 --> Unknown column 'mata_pelajaran' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\MapelModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT mata_pelajaran as nama_mapel FROM mata_pelajaran WHERE NOT EXISTS (SELECT * FROM detail_murid where mata_pelajaran.id = detail_murid.mapel_id AND detail_murid.murid_id = 1) AND  mata_pelajaran.kelas = 1')
+ 2 APPPATH\Controllers\Dashboard.php(36): App\Models\MapelModel->getBelumNilai('1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:36:29 --> Call to undefined method App\Models\MapelModel::getSudahNilai
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Dashboard.php(37): CodeIgniter\Model->__call('getSudahNilai', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:41:15 --> Cannot use object of type stdClass as array
+in APPPATH\Views\murid\dashboard.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(44): view('murid/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:41:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\murid\dashboard.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(44): view('murid/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:41:53 --> Undefined property: stdClass::$nama
+in APPPATH\Views\murid\dashboard.php on line 75.
+ 1 APPPATH\Views\murid\dashboard.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nama', 'APPPATH\\Views\\murid\\dashboard.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\murid\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(44): view('murid/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:42:06 --> Cannot use object of type stdClass as array
+in APPPATH\Views\murid\dashboard.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(44): view('murid/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:46:34 --> Function name must be a string
+in APPPATH\Models\MapelModel.php on line 42.
+ 1 APPPATH\Controllers\Dashboard.php(37): App\Models\MapelModel->getSudahNilai('1', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:46:51 --> syntax error, unexpected 'getResult' (T_STRING), expecting ';'
+in APPPATH\Models\MapelModel.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MapelModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MapelModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MapelModel')
+ 4 APPPATH\Controllers\Dashboard.php(19): spl_autoload_call('App\\Models\\MapelModel')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Dashboard->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:46:58 --> Function name must be a string
+in APPPATH\Models\MapelModel.php on line 42.
+ 1 APPPATH\Controllers\Dashboard.php(37): App\Models\MapelModel->getSudahNilai('1', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-30 14:50:16 --> mysqli_sql_exception: Unknown column 'murid_id.kelas' in 'where clause' in G:\Diverso\ctr\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\Diverso\ctr\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mata_pe...', 0)
+#1 G:\Diverso\ctr\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mata_pe...')
+#2 G:\Diverso\ctr\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mata_pe...')
+#3 G:\Diverso\ctr\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pe...', Array, false)
+#4 G:\Diverso\ctr\app\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\Diverso\ctr\app\Controllers\Dashboard.php(37): App\Models\MapelModel->getSudahNilai('1', '1')
+#6 G:\Diverso\ctr\system\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+#7 G:\Diverso\ctr\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 G:\Diverso\ctr\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 G:\Diverso\ctr\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 G:\Diverso\ctr\system\Commands\Server\rewrite.php(47): require_once('G:\\Diverso\\ctr\\...')
+#11 {main}
+CRITICAL - 2023-01-30 14:50:16 --> Unknown column 'murid_id.kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `mata_pelajaran`.`nama` as `nama_mapel`
+FROM `mata_pelajaran`
+LEFT JOIN `detail_murid` ON `mata_pelajaran`.`id` = `detail_murid`.`mapel_id`
+WHERE `mata_pelajaran`.`kelas` = :mata_pelajaran.kelas:
+AND `murid_id`.`kelas` = :murid_id.kelas:', [...], false)
+ 2 APPPATH\Models\MapelModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(37): App\Models\MapelModel->getSudahNilai('1', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-30 14:56:16 --> Undefined variable: merge
+in APPPATH\Views\murid\dashboard.php on line 73.
+ 1 APPPATH\Views\murid\dashboard.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: merge', 'APPPATH\\Views\\murid\\dashboard.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\murid\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('murid/dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(44): view('murid/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->murid_dash()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-30 14:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-30 14:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

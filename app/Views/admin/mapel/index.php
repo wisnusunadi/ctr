@@ -23,7 +23,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                     <div class="card">
                         <?php
                         $session = session();
@@ -92,6 +92,7 @@
                                                         <i class="fas fa-trash"></i>&nbsp;Hapus
                                                     </button>
                                                 </form>
+                                                <?= $cekGuru ?>
 
                                             </td>
                                         </tr>

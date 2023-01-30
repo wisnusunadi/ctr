@@ -26,40 +26,42 @@
                           </p>
                       </a>
                   </li>
-                  <li class="nav-header">Master Data</li>
-                  <li class="nav-item">
-                      <a href="/mapel" class="nav-link">
-                          <i class="nav-icon fas fa-th"></i>
-                          <p>
-                              Mata Pelajaran
-                          </p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="/guru" class="nav-link ">
-                          <i class="nav-icon fas fa-th"></i>
-                          <p>
-                              Guru
-                          </p>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="/murids" class="nav-link">
-                          <i class="nav-icon fas fa-th"></i>
-                          <p>
-                              Murid
-                          </p>
-                      </a>
-                  </li>
-                  <li class="nav-header">Rekap Data</li>
-                  <li class="nav-item">
-                      <a href="/rekap_nilai" class="nav-link">
-                          <i class="nav-icon fas fa-th"></i>
-                          <p>
-                              Laporan
-                          </p>
-                      </a>
-                  </li>
+                  <?php if ($session->get('role') == 'admin') { ?>
+                      <li class="nav-header">Master Data</li>
+                      <li class="nav-item">
+                          <a href="/mapel" class="nav-link">
+                              <i class="nav-icon fas fa-th"></i>
+                              <p>
+                                  Mata Pelajaran
+                              </p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/guru" class="nav-link ">
+                              <i class="nav-icon fas fa-th"></i>
+                              <p>
+                                  Guru
+                              </p>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/murids" class="nav-link">
+                              <i class="nav-icon fas fa-th"></i>
+                              <p>
+                                  Murid
+                              </p>
+                          </a>
+                      </li>
+                      <li class="nav-header">Rekap Data</li>
+                      <li class="nav-item">
+                          <a href="/rekap_nilai" class="nav-link">
+                              <i class="nav-icon fas fa-th"></i>
+                              <p>
+                                  Laporan
+                              </p>
+                          </a>
+                      </li>
+                  <?php } ?>
                   <!-- Murid -->
               </ul>
           </nav>

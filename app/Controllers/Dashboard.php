@@ -32,8 +32,16 @@ class Dashboard extends BaseController
     }
     public function murid_dash()
     {
+        $getMurid =  $this->muridModel->find($this->session->get('id'));
+        $belumNilai =  $this->mapelModel->getBelumNilai($this->session->get('id'), $getMurid['kelas']);
+        $sudahNilai =  $this->mapelModel->getSudahNilai($this->session->get('id'), $getMurid['kelas']);
+        $data_nilai = array_merge($sudahNilai, $belumNilai);
+        $data = [
+            'murid' => $getMurid,
+            'data_nilai' => $data_nilai,
+        ];
 
-        return view('murid/dashboard');
+        return view('murid/dashboard', $data);
     }
     public function guru_view()
     {
@@ -122,6 +130,7 @@ class Dashboard extends BaseController
     {
         $currPage = $this->request->getVar('page_mapel') ?  $this->request->getVar('page_mapel') : 1;
         $keyword = $this->request->getVar('keyword');
+        $cekGuru = $this->mapelModel->cekGuru(1);
         if ($keyword) {
             $db = $this->mapelModel->search($keyword);
         } else {
@@ -130,7 +139,8 @@ class Dashboard extends BaseController
         $data = [
             'mapel' => $db->paginate(5, 'mapel'),
             'pager' => $this->mapelModel->pager,
-            'currPage' => $currPage
+            'currPage' => $currPage,
+            'cekGuru' => $cekGuru
         ];
         return view('admin/mapel/index', $data);
     }

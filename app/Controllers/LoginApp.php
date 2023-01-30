@@ -74,6 +74,7 @@ class LoginApp extends BaseController
                 }
 
                 $sessLogin = [
+                    'id' =>  $nama_user['id'],
                     'nama' =>  $nama_user['nama'],
                     'isLogin' => true,
                     'username' => $user['username'],
