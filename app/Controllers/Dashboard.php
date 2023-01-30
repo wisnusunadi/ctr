@@ -292,7 +292,7 @@ class Dashboard extends BaseController
         $kelas =  $this->mapelModel->joinsGuru($id)->kelas;
         $data = [
             'detail' => $this->mapelModel->joinsGuru($id),
-            'murid' => $this->muridModel->getBelumNilai($kelas),
+            'murid_belum' => $this->muridModel->getBelumNilai($kelas),
             'murid_done' => $this->detailmuridModel->getSudahNilai($id)
         ];
         return view('admin/mapel/nilai', $data);

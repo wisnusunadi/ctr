@@ -90,22 +90,28 @@
                                                                 <th>No</th>
                                                                 <th width="50%">Nama</th>
                                                                 <th>Nilai</th>
-
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <?php
-                                                            $i = 1;
-                                                            ?>
-                                                            <?php foreach ($murid as $m) : ?>
+                                                            <?php if (count($murid_belum) > 0) { ?>
+                                                                <?php
+                                                                $i = 1;
+                                                                ?>
+                                                                <?php foreach ($murid_belum as $m) : ?>
+                                                                    <tr>
+                                                                        <td class="d-none"> <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="murid_id[]" style="width: 50%;" value="<?= $m->id ?>"></td>
+                                                                        <td><?= $i++ ?></td>
+                                                                        <td><?= $m->nama ?></td>
+                                                                        <td> <input type="text" class="form-control" id="inputEmail3" placeholder="Nilai" name="nilai[]" style="width: 50%;" min="0" max="100">
+                                                                        </td>
+                                                                    </tr>
+                                                                <?php endforeach; ?>
+                                                            <?php } else { ?>
                                                                 <tr>
-                                                                    <td class="d-none"> <input type="hidden" class="form-control" id="inputEmail3" placeholder="Nilai" name="murid_id[]" style="width: 50%;" value="<?= $m->id ?>"></td>
-                                                                    <td><?= $i++ ?></td>
-                                                                    <td><?= $m->nama ?></td>
-                                                                    <td> <input type="text" class="form-control" id="inputEmail3" placeholder="Nilai" name="nilai[]" style="width: 50%;" min="0" max="100">
-                                                                    </td>
+                                                                    <td colspan="3" style="vertical-align : middle;text-align:center;"> Data Kosong</td>
                                                                 </tr>
-                                                            <?php endforeach; ?>
+                                                            <?php } ?>
+
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -132,16 +138,23 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <?php
-                                                        $i = 1;
-                                                        ?>
-                                                        <?php foreach ($murid_done as $q) : ?>
+                                                        <?php if (count($murid_done) > 0) { ?>
+                                                            <?php
+                                                            $i = 1;
+                                                            ?>
+                                                            <?php foreach ($murid_done as $q) : ?>
+                                                                <tr>
+                                                                    <td><?= $i++ ?></td>
+                                                                    <td><?= $q->nama_murid ?></td>
+                                                                    <td><?= $q->nilai ?></td>
+                                                                </tr>
+                                                            <?php endforeach; ?>
+                                                        <?php } else { ?>
                                                             <tr>
-                                                                <td><?= $i++ ?></td>
-                                                                <td><?= $q->nama_murid ?></td>
-                                                                <td><?= $q->nilai ?></td>
+                                                                <td colspan="3" style="vertical-align : middle;text-align:center;"> Data Kosong</td>
                                                             </tr>
-                                                        <?php endforeach; ?>
+                                                        <?php } ?>
+
                                                     </tbody>
                                                 </table>
                                             </div>
