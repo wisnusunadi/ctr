@@ -92,8 +92,6 @@
                                                         <i class="fas fa-trash"></i>&nbsp;Hapus
                                                     </button>
                                                 </form>
-                                                <?= $cekGuru ?>
-
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
