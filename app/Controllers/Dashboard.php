@@ -132,14 +132,14 @@ class Dashboard extends BaseController
         $keyword = $this->request->getVar('keyword');
 
         if ($keyword) {
-            $db = $this->mapelModel->search($keyword);
+            $db = $this->mapelModel->getMapelGuru($keyword);
         } else {
-            $db =  $this->mapelModel->getMapelGuru();
+            $db =  $this->mapelModel->getMapelGuru('semua');
         }
         $data = [
-            'mapel' => $db,
-            //    'mapel' => $db->paginate(5, 'mapel'),
-            //'pager' => $this->mapelModel->getMapelGuru()->pager,
+
+            'mapel' => $db->paginate(5, 'mapel'),
+            'pager' => $this->mapelModel->getMapelGuru('semua')->pager,
             'currPage' => $currPage,
 
         ];

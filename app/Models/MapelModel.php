@@ -42,11 +42,19 @@ class MapelModel extends Model
         return $result;
     }
 
-    public function getMapelGuru()
+    public function getMapelGuru($keyword)
     {
-        $query = $this->db->table('mata_pelajaran');
-        $query->select('mata_pelajaran.id, mata_pelajaran.kode as kode_mapel,mata_pelajaran.nama as nama_mapel , guru.nama as nama_guru , mata_pelajaran.kelas ');
-        $query->join('guru', 'mata_pelajaran.id = guru.mata_pelajaran_id', 'left');
-        return $query->get()->getResultArray();
+        if ($keyword == 'semua' || $keyword == '') {
+            $query = $this->table('mata_pelajaran');
+            $query->select('mata_pelajaran.id, mata_pelajaran.kode as kode_mapel,mata_pelajaran.nama as nama_mapel , guru.nama as nama_guru , mata_pelajaran.kelas ');
+            $query->join('guru', 'mata_pelajaran.id = guru.mata_pelajaran_id', 'left');
+            return $query;
+        } else {
+            $query = $this->table('mata_pelajaran');
+            $query->select('mata_pelajaran.id, mata_pelajaran.kode as kode_mapel,mata_pelajaran.nama as nama_mapel , guru.nama as nama_guru , mata_pelajaran.kelas ');
+            $query->join('guru', 'mata_pelajaran.id = guru.mata_pelajaran_id', 'left');
+            $query->like('mata_pelajaran.nama', $keyword);
+            return $query;
+        }
     }
 }

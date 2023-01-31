@@ -99,7 +99,7 @@
                                 </tbody>
                             </table>
                             </br>
-                            <!-- $pager->links('mapel', 'custom_pagination') -->
+                            <?= $pager->links('mapel', 'custom_pagination') ?>
                         </div>
                         <!-- /.card-body -->
                     </div>
