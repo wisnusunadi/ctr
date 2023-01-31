@@ -134,11 +134,12 @@ class Dashboard extends BaseController
         if ($keyword) {
             $db = $this->mapelModel->search($keyword);
         } else {
-            $db =  $this->mapelModel;
+            $db =  $this->mapelModel->getMapelGuru();
         }
         $data = [
-            'mapel' => $db->paginate(5, 'mapel'),
-            'pager' => $this->mapelModel->pager,
+            'mapel' => $db,
+            //    'mapel' => $db->paginate(5, 'mapel'),
+            //'pager' => $this->mapelModel->getMapelGuru()->pager,
             'currPage' => $currPage,
 
         ];
@@ -292,7 +293,7 @@ class Dashboard extends BaseController
         $kelas =  $this->mapelModel->joinsGuru($id)->kelas;
         $data = [
             'detail' => $this->mapelModel->joinsGuru($id),
-            'murid_belum' => $this->muridModel->getBelumNilai($kelas),
+            'murid_belum' => $this->muridModel->getBelumNilai($kelas, $id),
             'murid_done' => $this->detailmuridModel->getSudahNilai($id)
         ];
         return view('admin/mapel/nilai', $data);
@@ -332,6 +333,15 @@ class Dashboard extends BaseController
             return redirect()->to('/mapel/nilai/' . $this->request->getPost('mapel_id'));
         }
     }
+
+    public function mapel_nilai_delete($id)
+    {
+        $get = $this->detailmuridModel->find($id);
+        $this->detailmuridModel->delete($id);
+        session()->setFlashdata('sukses', 'Berhasil Di hapus');
+        return redirect()->to('/mapel/nilai/' . $get['mapel_id']);
+    }
+
     public function rekap_nilai()
     {
         return view('admin/rekap/nilai');

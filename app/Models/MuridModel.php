@@ -18,10 +18,10 @@ class MuridModel extends Model
         return $this->table('murid')->like('nama', $keyword);
     }
 
-    public function getBelumNilai($kelas)
+    public function getBelumNilai($kelas, $mapel)
     {
         $db = db_connect();
-        $sql = "SELECT * FROM murid WHERE NOT EXISTS (SELECT * FROM detail_murid where murid.id = detail_murid.murid_id) AND murid.kelas = $kelas";
+        $sql = "SELECT * FROM murid WHERE NOT EXISTS (SELECT * FROM detail_murid where murid.id = detail_murid.murid_id AND detail_murid.mapel_id = $mapel) AND murid.kelas = $kelas";
         $result =  $db->query($sql)->getResult();
         return $result;
     }

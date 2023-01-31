@@ -67,19 +67,27 @@ class LoginApp extends BaseController
                 session()->setFlashdata('password', 'Password salah');
                 return redirect()->to('/');
             } else {
-                if ($user['role'] == 'admin') {
-                    $nama_user =  $this->guruModel->where('id', $user['guru_id'])->first();
-                } else {
+                if ($user['role'] == 'murid') {
                     $nama_user =  $this->muridModel->where('id', $user['murid_id'])->first();
+
+                    $sessLogin = [
+                        'id' =>  $nama_user['id'],
+                        'nama' =>  $nama_user['nama'],
+                        'isLogin' => true,
+                        'username' => $user['username'],
+                        'role' => $user['role']
+                    ];
+                } else {
+                    $sessLogin = [
+                        'id' =>  1,
+                        'nama' =>  'Admin',
+                        'isLogin' => true,
+                        'username' => 'admin',
+                        'role' => 'admin'
+                    ];
                 }
 
-                $sessLogin = [
-                    'id' =>  $nama_user['id'],
-                    'nama' =>  $nama_user['nama'],
-                    'isLogin' => true,
-                    'username' => $user['username'],
-                    'role' => $user['role']
-                ];
+
                 $this->session->set($sessLogin);
 
 

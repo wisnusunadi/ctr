@@ -73,19 +73,19 @@
                                     <?php foreach ($mapel as $k) : ?>
                                         <tr>
                                             <td><?= $i++; ?></td>
-                                            <td><?= $k['kode']; ?></td>
-                                            <td><?= $k['nama']; ?></td>
-                                            <td>Kelas <?= $k['kelas']; ?></td>
+                                            <td><?= $k->kode_mapel; ?></td>
+                                            <td><?= $k->nama_mapel; ?></td>
+                                            <td>Kelas <?= $k->kelas; ?></td>
                                             <td>
-                                                <a type="button" class="btn btn-warning" href="/mapel/nilai/<?= $k['id']; ?>">
+                                                <a type="button" class="btn btn-warning <?= $k->nama_guru == NULL ? 'disabled' : '' ?>" href="/mapel/nilai/<?= $k->id; ?>" disabled>
                                                     <i class="fas fa-eye"></i>&nbsp;Nilai
                                                 </a>
                                                 &nbsp;
-                                                <a type="button" class="btn btn-info" href="/mapel/edit/<?= $k['id']; ?>">
+                                                <a type="button" class="btn btn-info" href="/mapel/edit/<?= $k->id ?>">
                                                     <i class="fas fa-pencil-alt"></i>&nbsp;Edit
                                                 </a>
                                                 &nbsp;
-                                                <form action="/mapel/delete/<?= $k['id']; ?>" class="d-inline" method="post">
+                                                <form action="/mapel/delete/<?= $k->id; ?>" class="d-inline" method="post">
                                                     <?= csrf_field() ?>
                                                     <input type="hidden" name="_method" value="DELETE">
                                                     <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin di hapus ?')">
@@ -93,12 +93,13 @@
                                                     </button>
                                                 </form>
                                             </td>
+                                            <!--  -->
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                             </table>
                             </br>
-                            <?= $pager->links('mapel', 'custom_pagination'); ?>
+                            <!-- $pager->links('mapel', 'custom_pagination') -->
                         </div>
                         <!-- /.card-body -->
                     </div>

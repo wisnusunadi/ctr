@@ -41,4 +41,12 @@ class MapelModel extends Model
         $result =  $db->query($sql)->getResult();
         return $result;
     }
+
+    public function getMapelGuru()
+    {
+        $query = $this->db->table('mata_pelajaran');
+        $query->select('mata_pelajaran.id, mata_pelajaran.kode as kode_mapel,mata_pelajaran.nama as nama_mapel , guru.nama as nama_guru , mata_pelajaran.kelas ');
+        $query->join('guru', 'mata_pelajaran.id = guru.mata_pelajaran_id', 'left');
+        return $query->get()->getResult();
+    }
 }

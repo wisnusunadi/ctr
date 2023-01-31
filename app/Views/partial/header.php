@@ -29,4 +29,12 @@
     <link rel="stylesheet" href="<?= base_url('theme/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') ?>">
     <!-- summernote -->
     <link rel=" stylesheet" href="<?= base_url('theme/plugins/summernote/summernote-bs4.min.css') ?>">
+    <style>
+        a.disabled {
+            /* Make the disabled links grayish*/
+            color: gray;
+            /* And disable the pointer events */
+            pointer-events: none;
+        }
+    </style>
 </head>

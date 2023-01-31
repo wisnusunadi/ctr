@@ -44,6 +44,7 @@ $routes->get('/rekap_nilai', 'Dashboard::rekap_nilai', ['filter' => 'auth']);
 
 //MataPelajaran
 $routes->post('/mapel/nilai/', 'Dashboard::mapel_nilai_store', ['filter' => 'auth']);
+$routes->delete('/mapel/nilai/delete/(:num)', 'Dashboard::mapel_nilai_delete/$1', ['filter' => 'auth']);
 $routes->get('/mapel/nilai/(:num)', 'Dashboard::mapel_nilai/$1', ['filter' => 'auth']);
 $routes->get('/mapel', 'Dashboard::mapel_view', ['filter' => 'auth']);
 $routes->get('/mapel/edit/(:num)', 'Dashboard::mapel_edit/$1', ['filter' => 'auth']);

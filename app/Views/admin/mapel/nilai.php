@@ -134,6 +134,7 @@
                                                             <th>No</th>
                                                             <th width="50%">Nama</th>
                                                             <th>Nilai</th>
+                                                            <th>Aksi</th>
 
                                                         </tr>
                                                     </thead>
@@ -147,6 +148,16 @@
                                                                     <td><?= $i++ ?></td>
                                                                     <td><?= $q->nama_murid ?></td>
                                                                     <td><?= $q->nilai ?></td>
+                                                                    <td>
+                                                                        <form action="/mapel/nilai/delete/<?= $q->id; ?>" class="d-inline" method="post">
+                                                                            <?= csrf_field() ?>
+                                                                            <input type="hidden" name="_method" value="DELETE">
+                                                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin di hapus ?')">
+                                                                                <i class="fas fa-trash"></i>&nbsp;Hapus
+                                                                            </button>
+                                                                        </form>
+                                                                    </td>
+
                                                                 </tr>
                                                             <?php endforeach; ?>
                                                         <?php } else { ?>
@@ -158,10 +169,6 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <button type="submit" class="btn btn-info">Masukkan Nilai</button>
-                                            <a type="submit" class="btn btn-default float-right" href="/mapel">Batal</a>
                                         </div>
                                     </div>
                                 </div>
