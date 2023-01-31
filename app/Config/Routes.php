@@ -63,6 +63,7 @@ $routes->get('/guru/create', 'Dashboard::guru_create', ['filter' => 'auth']);
 
 
 //Murid
+$routes->get('/murids/laporan', 'Dashboard::pdf_nilai', ['filter' => 'auth']);
 $routes->post('/murids', 'Dashboard::murid_store', ['filter' => 'auth']);
 $routes->get('/murids', 'Dashboard::murid_view', ['filter' => 'auth']);
 $routes->get('/murids/create', 'Dashboard::murid_create', ['filter' => 'auth']);

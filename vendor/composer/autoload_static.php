@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
+class ComposerStaticInitd1e5f0af9ed1de184216aa5ff61d9e4d
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -41,6 +41,8 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Console\\' => 26,
+            'Svg\\' => 4,
+            'Sabberworm\\CSS\\' => 15,
         ),
         'P' => 
         array (
@@ -56,6 +58,10 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
         array (
             'Nexus\\CsConfig\\' => 15,
         ),
+        'M' => 
+        array (
+            'Masterminds\\' => 12,
+        ),
         'L' => 
         array (
             'Laminas\\Escaper\\' => 16,
@@ -66,10 +72,12 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
         ),
         'F' => 
         array (
+            'FontLib\\' => 8,
             'Faker\\' => 6,
         ),
         'D' => 
         array (
+            'Dompdf\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
@@ -155,6 +163,14 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Svg\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Sabberworm\\CSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -187,6 +203,10 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
         array (
             0 => __DIR__ . '/..' . '/nexusphp/cs-config/src',
         ),
+        'Masterminds\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
         'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
@@ -195,9 +215,17 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
+        'FontLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
+        ),
+        'Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -254,6 +282,7 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
@@ -893,10 +922,10 @@ class ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitf50caf0be4737d56ad9dd0a4e92a655b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd1e5f0af9ed1de184216aa5ff61d9e4d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd1e5f0af9ed1de184216aa5ff61d9e4d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd1e5f0af9ed1de184216aa5ff61d9e4d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitd1e5f0af9ed1de184216aa5ff61d9e4d::$classMap;
 
         }, null, ClassLoader::class);
     }

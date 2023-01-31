@@ -9,6 +9,7 @@ use App\Models\MapelModel;
 use App\Models\MuridModel;
 use Config\Database;
 use Config\Services;
+use Dompdf\Dompdf;
 use PhpParser\Node\Stmt\TryCatch;
 
 class Dashboard extends BaseController
@@ -346,6 +347,23 @@ class Dashboard extends BaseController
         $this->detailmuridModel->delete($id);
         session()->setFlashdata('sukses', 'Berhasil Di hapus');
         return redirect()->to('/mapel/nilai/' . $get['mapel_id']);
+    }
+
+    public function pdf_nilai()
+    {
+        $getMurid =  $this->muridModel->find($this->session->get('id'));
+        $belumNilai =  $this->mapelModel->getBelumNilai($this->session->get('id'), $getMurid['kelas']);
+        $sudahNilai =  $this->mapelModel->getSudahNilai($this->session->get('id'), $getMurid['kelas']);
+        $data_nilai = array_merge($sudahNilai, $belumNilai);
+        $data = [
+            'murid' => $getMurid,
+            'data_nilai' => $data_nilai,
+        ];
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml(view('murid/laporan', $data));
+        $dompdf->setPaper('A4', 'p');
+        $dompdf->render();
+        $dompdf->stream("Laporan Nilai", array("Attachment" => false));
     }
 
     public function rekap_nilai()

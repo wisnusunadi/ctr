@@ -55,10 +55,15 @@
                 <!-- /.col -->
                 <div class="col-md-7">
                     <div class="card">
+
                         <div class="card-body">
                             <div class="tab-content">
                                 <div class="active tab-pane" id="activity">
                                     <div class="card">
+                                        <a type="button" class="btn btn-info" target="_blank" href="/murids/laporan/" style="width: 20%;">
+                                            <i class="fa fa-file" aria-hidden="true"></i>
+                                            &nbsp;Export
+                                        </a>
                                         <div class="card-body" style="overflow-y:scroll; height:400px;">
                                             <div class="table-responsive">
                                                 <table class="table align-center" id="showtable" style="width: 100%;">
