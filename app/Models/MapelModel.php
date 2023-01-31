@@ -19,7 +19,7 @@ class MapelModel extends Model
     }
     public function joinsGuru($id)
     {
-        $query = $this->db->table('mata_pelajaran');
+        $query = $this->table('mata_pelajaran');
         $query->select('guru.nama as nama_guru,mata_pelajaran.nama as nama_mapel,kelas,mata_pelajaran.id as id_mapel');
         $query->join('guru', 'mata_pelajaran.id = guru.mata_pelajaran_id')->where('mata_pelajaran.id', $id);
         return $query->get()->getRow();
@@ -27,7 +27,7 @@ class MapelModel extends Model
 
     public function getSudahNilai($id_siswa, $kelas)
     {
-        $query = $this->db->table('mata_pelajaran');
+        $query = $this->table('mata_pelajaran');
         $query->select('mata_pelajaran.kode as kode_mapel,mata_pelajaran.nama as nama_mapel,detail_murid.nilai');
         $query->join('detail_murid', 'mata_pelajaran.id = detail_murid.mapel_id', 'left');
         $query->where('mata_pelajaran.kelas', $kelas);

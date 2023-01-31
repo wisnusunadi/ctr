@@ -28,7 +28,12 @@ class Dashboard extends BaseController
 
     public function admin_dash()
     {
-        return view('admin/dashboard');
+        $data = [
+            'murid' => $this->muridModel->findAll(),
+            'guru' => $this->guruModel->findAll(),
+            'mapel' => $this->mapelModel->findAll()
+        ];
+        return view('admin/dashboard', $data);
     }
     public function murid_dash()
     {
@@ -235,6 +240,7 @@ class Dashboard extends BaseController
             'kelas' => 'required',
 
         ]);
+
         if (!$validate) {
             session()->setFlashdata('gagal', 'Cek Form Kembali');
             return redirect()->to('/murids/create');
