@@ -27,11 +27,19 @@
                     <div class="card">
                         <?php
                         $session = session();
-                        if ($session->getFlashdata('delete')) { ?>
+                        ?>
+                        <?php if ($session->getFlashdata('gagal')) { ?>
+                            <div class="alert alert-danger alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <h5><i class="icon fas fa-ban"></i> Gagal</h5>
+                                <?php echo $session->getflashdata('gagal'); ?>
+                            </div>
+                        <?php } ?>
+                        <?php if ($session->getFlashdata('sukses')) { ?>
                             <div class="alert alert-success alert-dismissible">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                 <h5><i class="icon fas fa-check"></i> Berhasil</h5>
-                                <?php echo $session->getflashdata('delete'); ?>
+                                <?php echo $session->getflashdata('sukses'); ?>
                             </div>
                         <?php } ?>
                         <div class="card-header">

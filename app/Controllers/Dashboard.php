@@ -206,8 +206,12 @@ class Dashboard extends BaseController
     }
     public function mapel_delete($id)
     {
-        $this->mapelModel->delete($id);
-        session()->setFlashdata('delete', 'Berhasil Di hapus');
+        try {
+            $this->mapelModel->delete($id);
+            session()->setFlashdata('sukses', 'Berhasil Di hapus');
+        } catch (\Throwable $th) {
+            session()->setFlashdata('gagal', 'Gagal Di hapus');
+        }
         return redirect()->to('/mapel');
     }
     public function murid_view()
@@ -291,8 +295,14 @@ class Dashboard extends BaseController
     }
     public function murid_delete($id)
     {
-        $this->muridModel->delete($id);
-        session()->setFlashdata('delete', 'Berhasil Di hapus');
+
+        try {
+            $this->muridModel->delete($id);
+            session()->setFlashdata('sukses', 'Berhasil Di hapus');
+        } catch (\Throwable $th) {
+            session()->setFlashdata('gagal', 'Gagal Di hapus');
+        }
+
         return redirect()->to('/murids');
     }
     public function mapel_nilai($id)
