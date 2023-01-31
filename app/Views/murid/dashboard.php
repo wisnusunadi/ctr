@@ -71,7 +71,8 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <?php $i = 1 ?>
+                                                        <?php $i = 1;
+                                                        $total_nilai = 0; ?>
                                                         <?php foreach ($data_nilai as $b) : ?>
                                                             <tr>
                                                                 <td><?= $i++; ?></td>
@@ -79,8 +80,15 @@
                                                                 <td><?= $b->nama_mapel; ?></td>
                                                                 <td><?= $b->nilai; ?></td>
                                                             </tr>
+                                                            <?php $total_nilai += intVal($b->nilai); ?>
                                                         <?php endforeach; ?>
                                                     </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th scope="row" colspan="3">Rata Rata</th>
+                                                            <td><b><?= $total_nilai / count($data_nilai); ?></b></td>
+                                                        </tr>
+                                                    </tfoot>
                                                 </table>
                                             </div>
                                         </div>
