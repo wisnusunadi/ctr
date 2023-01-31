@@ -30,6 +30,8 @@
 <script src="<?= base_url('theme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
 <!-- ChartJS -->
 <script src="<?= base_url('theme/plugins/chart.js/Chart.min.js') ?>"></script>
+<!-- Select2 -->
+<script src="<?= base_url('theme/plugins/select2/js/select2.full.min.js') ?>"></script>
 <!-- Sparkline -->
 <script src="<?= base_url('theme/plugins/sparklines/sparkline.js') ?>"></script>
 <!-- JQVMap -->
@@ -58,6 +60,9 @@
         $('#example2').DataTable({
 
         });
+        $('.select2').select2({
+            theme: 'bootstrap4'
+        })
     });
 </script>
 </body>

@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/adminlte.min.css') ?>">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="<?= base_url('theme/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?= base_url('theme/plugins/select2/css/select2.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('theme/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') ?>">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?= base_url('theme/plugins/daterangepicker/daterangepicker.css') ?>">
     <!-- Datatables -->

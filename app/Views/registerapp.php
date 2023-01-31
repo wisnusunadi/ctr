@@ -24,7 +24,7 @@
 
                 <form action="/register" method="post">
                     <div class="input-group mb-3">
-                        <select type="text" class="form-control" placeholder="Nama" name="nama">
+                        <select type="text" class="select2 form-control" placeholder="Nama" name="nama">
                             <option value="">Pilih Nama Siswa</option>
                             <?php foreach ($murid as $m) : ?>
                                 <option value="<?= $m['id'] ?>"><?= $m['nama'] ?></option>
@@ -32,7 +32,7 @@
                         </select>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class="fas fa fa-users"></span>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                         <input type="text" class="form-control" placeholder="username" name="username">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class="fas fa-user"></span>
                             </div>
                         </div>
                     </div>
@@ -76,3 +76,15 @@
             <!-- /.login-card-body -->
         </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="<?= base_url('theme/plugins/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('theme/plugins/select2/js/select2.full.min.js') ?>"></script>
+    <script>
+        $(function() {
+
+            $('.select2').select2({
+                theme: 'bootstrap4'
+            })
+        });
+    </script>

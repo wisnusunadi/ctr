@@ -1,5 +1,8 @@
   <!-- Main Sidebar Container -->
-  <?php $session = session() ?>
+  <?php $session = session();
+
+
+    ?>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
@@ -37,7 +40,7 @@
                           </a>
                       </li>
                       <li class="nav-item">
-                          <a href="/guru" class="nav-link ">
+                          <a href="/guru" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
                                   Guru
@@ -52,15 +55,7 @@
                               </p>
                           </a>
                       </li>
-                      <li class="nav-header">Rekap Data</li>
-                      <li class="nav-item">
-                          <a href="/rekap_nilai" class="nav-link">
-                              <i class="nav-icon fas fa-th"></i>
-                              <p>
-                                  Laporan
-                              </p>
-                          </a>
-                      </li>
+
                   <?php } ?>
                   <!-- Murid -->
               </ul>

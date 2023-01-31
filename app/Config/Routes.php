@@ -53,7 +53,7 @@ $routes->get('/mapel/create', 'Dashboard::mapel_create', ['filter' => 'auth']);
 $routes->delete('/mapel/delete/(:num)', 'Dashboard::mapel_delete/$1', ['filter' => 'auth']);
 $routes->post('/mapel/', 'Dashboard::mapel_store', ['filter' => 'auth']);
 
-//Guru
+//ADmin
 $routes->get('/guru', 'Dashboard::guru_view', ['filter' => 'auth']);
 $routes->get('/guru/edit/(:num)', 'Dashboard::guru_edit/$1', ['filter' => 'auth']);
 $routes->post('/guru/update/(:num)', 'Dashboard::guru_update/$1', ['filter' => 'auth']);

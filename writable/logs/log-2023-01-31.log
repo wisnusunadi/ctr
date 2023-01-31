@@ -631,3 +631,426 @@ INFO - 2023-01-31 04:38:33 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-01-31 04:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-01-31 04:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-01-31 04:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:40:42 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 39.
+ 1 APPPATH\Views\partial\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/mapel/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(151): view('admin/mapel/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->mapel_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:42:54 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 40.
+ 1 APPPATH\Views\partial\sidebar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:43:55 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 40.
+ 1 APPPATH\Views\partial\sidebar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:45:16 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 41.
+ 1 APPPATH\Views\partial\sidebar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:45:35 --> Call to undefined method CodeIgniter\HTTP\URI::segment()
+in APPPATH\Views\partial\sidebar.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 4 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+ 9 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 04:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:55:26 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 44.
+ 1 APPPATH\Views\partial\sidebar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:57:13 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 44.
+ 1 APPPATH\Views\partial\sidebar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:58:13 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 44.
+ 1 APPPATH\Views\partial\sidebar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:58:22 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 44.
+ 1 APPPATH\Views\partial\sidebar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 04:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 04:59:02 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 4.
+ 1 APPPATH\Views\partial\sidebar.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/guru/index', [], true)
+10 APPPATH\Controllers\Dashboard.php(65): view('admin/guru/index', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->guru_view()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:08:01 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 4.
+ 1 APPPATH\Views\partial\sidebar.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:12:41 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 4.
+ 1 APPPATH\Views\partial\sidebar.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:18:56 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 44.
+ 1 APPPATH\Views\partial\sidebar.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(9): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:22:44 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\partial\sidebar.php on line 5.
+ 1 APPPATH\Views\partial\sidebar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\partial\\sidebar.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(9): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:22:51 --> Undefined variable: data
+in APPPATH\Views\partial\sidebar.php on line 46.
+ 1 APPPATH\Views\partial\sidebar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\partial\\sidebar.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(9): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:23:09 --> Undefined variable: menu
+in APPPATH\Views\partial\sidebar.php on line 46.
+ 1 APPPATH\Views\partial\sidebar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: menu', 'APPPATH\\Views\\partial\\sidebar.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(9): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:23:10 --> Undefined variable: menu
+in APPPATH\Views\partial\sidebar.php on line 46.
+ 1 APPPATH\Views\partial\sidebar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: menu', 'APPPATH\\Views\\partial\\sidebar.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(9): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:23:58 --> Argument 2 passed to CodeIgniter\View\View::include() must be of the type array or null, string given, called in E:\Wisnu\ctr\app\Views\partial\master.php on line 8
+in SYSTEMPATH\View\View.php on line 429.
+ 1 APPPATH\Views\partial\master.php(8): CodeIgniter\View\View->include('partial/sidebar', 'dashboard')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:24:44 --> Undefined variable: data
+in APPPATH\Views\partial\sidebar.php on line 46.
+ 1 APPPATH\Views\partial\sidebar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\partial\\sidebar.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', [...], true)
+ 5 APPPATH\Views\partial\master.php(8): CodeIgniter\View\View->include('partial/sidebar', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-31 06:25:08 --> Undefined variable: data
+in APPPATH\Views\partial\sidebar.php on line 46.
+ 1 APPPATH\Views\partial\sidebar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\partial\\sidebar.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('partial/sidebar', null, true)
+ 5 APPPATH\Views\partial\master.php(3): CodeIgniter\View\View->include('partial/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partial\\master.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('partial/master', [], true)
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\Dashboard.php(36): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->admin_dash()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-01-31 06:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-31 06:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

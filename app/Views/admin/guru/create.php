@@ -97,7 +97,7 @@
                                 <div class="form-group row">
                                     <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
                                     <div class="col-sm-10">
-                                        <select class="form-control" id="inputPassword3" placeholder="Password" name="mata_pelajaran_id">
+                                        <select class="select2 form-control" id="inputPassword3" placeholder="Password" name="mata_pelajaran_id">
                                             <?php foreach ($mapel as $m) : ?>
                                                 <option value="<?= $m['id'] ?>"><?= $m['nama'] ?> - Kelas <?= $m['kelas'] ?> </option>
                                             <?php endforeach ?>
