@@ -293,6 +293,32 @@ class Dashboard extends BaseController
         session()->setFlashdata('sukses', 'Berhasil Diubah');
         return redirect()->to('/murids/edit/' . $id);
     }
+    public function murid_update_profile($id)
+    {
+        $data = $this->muridModel->find($id);
+        $validate = $this->validate([
+            'no_induk' => $data['no_induk'] ==  $this->request->getPost('no_induk') ? 'required' : 'is_unique[murid.no_induk]|required',
+            'tgl_lahir' => 'required',
+            'nama' => 'required',
+            'jenis' => 'required',
+            'kelas' => 'required',
+
+        ]);
+        if (!$validate) {
+            session()->setFlashdata('gagal', 'Cek Form Kembali');
+            return redirect()->to('/murids/profile');
+        }
+        $this->muridModel->save([
+            "id" => $id,
+            "no_induk" => $this->request->getPost('no_induk'),
+            "nama" => $this->request->getPost('nama'),
+            "tgl_lahir" => $this->request->getPost('tgl_lahir'),
+            "jenis" =>  $this->request->getPost('jenis'),
+            "kelas" =>  $this->request->getPost('kelas')
+        ]);
+        session()->setFlashdata('sukses', 'Berhasil Diubah');
+        return redirect()->to('/murids/profile');
+    }
     public function murid_delete($id)
     {
 
@@ -379,5 +405,12 @@ class Dashboard extends BaseController
     public function rekap_nilai()
     {
         return view('admin/rekap/nilai');
+    }
+    public function profile()
+    {
+        $data = [
+            'murid' => $this->muridModel->find($this->session->get('id')),
+        ];
+        return view('murid/profile', $data);
     }
 }

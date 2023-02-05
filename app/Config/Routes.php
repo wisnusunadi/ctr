@@ -63,12 +63,14 @@ $routes->get('/guru/create', 'Dashboard::guru_create', ['filter' => 'auth']);
 
 
 //Murid
+$routes->get('/murids/profile', 'Dashboard::profile', ['filter' => 'auth']);
 $routes->get('/murids/laporan', 'Dashboard::pdf_nilai', ['filter' => 'auth']);
 $routes->post('/murids', 'Dashboard::murid_store', ['filter' => 'auth']);
 $routes->get('/murids', 'Dashboard::murid_view', ['filter' => 'auth']);
 $routes->get('/murids/create', 'Dashboard::murid_create', ['filter' => 'auth']);
 $routes->get('/murids/edit/(:num)', 'Dashboard::murid_edit/$1', ['filter' => 'auth']);
 $routes->post('/murids/update/(:num)', 'Dashboard::murid_update/$1', ['filter' => 'auth']);
+$routes->post('/murids/update_profile/(:num)', 'Dashboard::murid_update_profile/$1', ['filter' => 'auth']);
 $routes->delete('/murids/delete/(:num)', 'Dashboard::murid_delete/$1', ['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
