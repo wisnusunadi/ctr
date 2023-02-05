@@ -107,4 +107,39 @@ class LoginApp extends BaseController
         $this->session->destroy();
         return redirect()->to('/');
     }
+    public function ganti_password()
+    {
+        return view('gantipwd');
+    }
+    public function ganti_password_store()
+    {
+        $data = $this->request->getPost();
+        $validate = $this->validate([
+            'pwd_lama' => 'required',
+            'pwd_baru' => 'min_length[8]|alpha_numeric_punct|required',
+            'pwd_baru2' => 'matches[pwd_baru]|required'
+        ]);
+        if (!$validate) {
+            session()->setFlashdata('gagal', 'Cek Form Kembali');
+            return redirect()->to('/gantipwd');
+        }
+        $user = $this->userModel->where('username', $this->session->get('username'))->first();
+
+        if (password_verify($data['pwd_lama'], $user['password'])) {
+            $password = password_hash($data['pwd_baru'], PASSWORD_DEFAULT);
+
+            $this->userModel->save([
+                "id" => $user['id'],
+                "murid_id" => $user['murid_id'],
+                "username" => $user['username'],
+                "password" => $password,
+                "role" => $user['role']
+            ]);
+            session()->setFlashdata('sukses', 'Cek Form Kembali');
+            return redirect()->to('/gantipwd');
+        } else {
+            session()->setFlashdata('gagal', 'Password Lama Salah');
+            return redirect()->to('/gantipwd');
+        }
+    }
 }

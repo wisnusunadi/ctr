@@ -73,8 +73,15 @@
                               </p>
                           </a>
                       </li>
-
                   <?php } ?>
+                  <li class="nav-item">
+                      <a href="/gantipwd" class="nav-link">
+                          <i class="nav-icon fas fa-th"></i>
+                          <p>
+                              Ganti Password
+                          </p>
+                      </a>
+                  </li>
                   <!-- Murid -->
               </ul>
           </nav>

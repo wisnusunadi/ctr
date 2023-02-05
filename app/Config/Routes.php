@@ -34,6 +34,8 @@ $routes->get('/register', 'LoginApp::register');
 $routes->post('/register', 'LoginApp::store_register');
 $routes->post('/login', 'LoginApp::store_login');
 $routes->get('/logout', 'LoginApp::logout');
+$routes->get('/gantipwd', 'LoginApp::ganti_password', ['filter' => 'auth']);
+$routes->post('/gantipwd', 'LoginApp::ganti_password_store', ['filter' => 'auth']);
 
 //Murid
 $routes->get('/murid', 'Dashboard::murid_dash', ['filter' => 'auth']);
