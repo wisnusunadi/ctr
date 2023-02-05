@@ -25,4 +25,12 @@ class MuridModel extends Model
         $result =  $db->query($sql)->getResult();
         return $result;
     }
+
+    public function getBelumRegister()
+    {
+        $db = db_connect();
+        $sql = "SELECT * FROM murid WHERE NOT EXISTS (SELECT * FROM user where murid.id = user.murid_id )";
+        $result =  $db->query($sql)->getResultArray();
+        return $result;
+    }
 }

@@ -28,7 +28,7 @@ class LoginApp extends BaseController
     }
     public function register()
     {
-        $murid =   $this->muridModel->findAll();
+        $murid =   $this->muridModel->getBelumRegister();
         echo view('partial/header', ['murid' => $murid]);
 
         echo view('/registerapp');
@@ -46,7 +46,7 @@ class LoginApp extends BaseController
             session()->setFlashdata('error', $errors);
             return redirect()->to('register');
         }
-        $password = md5($data['password']);
+        $password = password_hash($data['password'], PASSWORD_DEFAULT);
 
         $this->userModel->save([
             'murid_id' => $data['nama'],
@@ -63,10 +63,7 @@ class LoginApp extends BaseController
         $user = $this->userModel->where('username', $data['username'])->first();
 
         if ($user) {
-            if ($user['password'] != md5($data['password'])) {
-                session()->setFlashdata('password', 'Password salah');
-                return redirect()->to('/');
-            } else {
+            if (password_verify($data['password'], $user['password'])) {
                 if ($user['role'] == 'murid') {
                     $nama_user =  $this->muridModel->where('id', $user['murid_id'])->first();
 
@@ -96,6 +93,9 @@ class LoginApp extends BaseController
                 } else {
                     return redirect()->to('/murid');
                 }
+            } else {
+                session()->setFlashdata('password', 'Password salah');
+                return redirect()->to('/');
             }
         } else {
             session()->setFlashdata('username', 'Username tidak ditemukan');
